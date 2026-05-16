@@ -2,6 +2,7 @@
 type ModuleMap = Record<string, () => Promise<Record<string, unknown>>>;
 export const modules: ModuleMap = {
   "./components/mockups/lifeforge/AiCoach.tsx": () => import("../components/mockups/lifeforge/AiCoach.tsx"),
+  "./components/mockups/lifeforge/AiPlan.tsx": () => import("../components/mockups/lifeforge/AiPlan.tsx"),
   "./components/mockups/lifeforge/Analytics.tsx": () => import("../components/mockups/lifeforge/Analytics.tsx"),
   "./components/mockups/lifeforge/Auth.tsx": () => import("../components/mockups/lifeforge/Auth.tsx"),
   "./components/mockups/lifeforge/Dashboard.tsx": () => import("../components/mockups/lifeforge/Dashboard.tsx"),
