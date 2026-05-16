@@ -12,6 +12,7 @@ export const modules: ModuleMap = {
   "./components/mockups/lifeforge/HabitCreate.tsx": () => import("../components/mockups/lifeforge/HabitCreate.tsx"),
   "./components/mockups/lifeforge/Habits.tsx": () => import("../components/mockups/lifeforge/Habits.tsx"),
   "./components/mockups/lifeforge/Learning.tsx": () => import("../components/mockups/lifeforge/Learning.tsx"),
+  "./components/mockups/lifeforge/LifeForgeApp.tsx": () => import("../components/mockups/lifeforge/LifeForgeApp.tsx"),
   "./components/mockups/lifeforge/Onboarding.tsx": () => import("../components/mockups/lifeforge/Onboarding.tsx"),
   "./components/mockups/lifeforge/Premium.tsx": () => import("../components/mockups/lifeforge/Premium.tsx"),
   "./components/mockups/lifeforge/Problem.tsx": () => import("../components/mockups/lifeforge/Problem.tsx"),
