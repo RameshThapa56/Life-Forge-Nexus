@@ -6,6 +6,7 @@ import { Onboarding } from './Onboarding';
 import { GoalSelect } from './GoalSelect';
 import { Problem } from './Problem';
 import { HabitCreate } from './HabitCreate';
+import { Lifestyle } from './Lifestyle';
 import { AiPlan } from './AiPlan';
 import { Auth } from './Auth';
 import { Dashboard } from './Dashboard';
@@ -23,12 +24,12 @@ import './_group.css';
 
 type ScreenId =
   | 'splash' | 'onboarding' | 'goalSelect' | 'problem'
-  | 'habitCreate' | 'aiPlan' | 'auth'
+  | 'habitCreate' | 'lifestyle' | 'aiPlan' | 'auth'
   | 'dashboard' | 'routine' | 'habits' | 'analytics' | 'diet'
   | 'learning' | 'aiCoach' | 'gamification' | 'social' | 'settings' | 'premium';
 
 const ONBOARDING_FLOW: ScreenId[] = [
-  'splash', 'onboarding', 'goalSelect', 'problem', 'habitCreate', 'aiPlan', 'auth',
+  'splash', 'onboarding', 'goalSelect', 'problem', 'habitCreate', 'lifestyle', 'aiPlan', 'auth',
 ];
 
 const MAIN_TABS: ScreenId[] = ['dashboard', 'routine', 'habits', 'analytics', 'gamification'];
@@ -43,7 +44,7 @@ const TAB_CONFIG = [
 
 const SCREEN_MAP: Record<ScreenId, React.ComponentType> = {
   splash: Splash, onboarding: Onboarding, goalSelect: GoalSelect,
-  problem: Problem, habitCreate: HabitCreate, aiPlan: AiPlan, auth: Auth,
+  problem: Problem, habitCreate: HabitCreate, lifestyle: Lifestyle, aiPlan: AiPlan, auth: Auth,
   dashboard: Dashboard, routine: Routine, habits: Habits, analytics: Analytics,
   diet: Diet, learning: Learning, aiCoach: AiCoach,
   gamification: Gamification, social: Social, settings: Settings, premium: Premium,
